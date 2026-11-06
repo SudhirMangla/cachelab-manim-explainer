@@ -1,0 +1,18 @@
+# Temporary render/cache output
+.tmp/
+media/
+*.pyc
+__pycache__/
+
+# Python environments
+.venv/
+venv/
+
+# Nested separate project (own git repo + venv)
+manimations/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

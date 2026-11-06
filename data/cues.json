@@ -1,0 +1,28 @@
+{
+  "_note": "Timings (seconds) measured from VoiceOver.mp3 with FFmpeg silencedetect. Scene cuts sit inside the pauses between voice-over paragraphs. Captions follow the spoken phrases; numbers are written as digits for reading.",
+  "video_duration": 46.1,
+  "scenes": [
+    { "name": "open",       "start": 0.0,   "end": 6.67 },
+    { "name": "problem",    "start": 6.67,  "end": 13.73 },
+    { "name": "pattern",    "start": 13.73, "end": 23.05 },
+    { "name": "comparison", "start": 23.05, "end": 29.82 },
+    { "name": "metrics",    "start": 29.82, "end": 39.74 },
+    { "name": "close",      "start": 39.74, "end": 46.1 }
+  ],
+  "captions": [
+    { "start": 0.25,  "end": 4.62,  "text": "Repeated API reads send the same request\nback to the database," },
+    { "start": 4.82,  "end": 6.27,  "text": "adding avoidable time." },
+    { "start": 7.06,  "end": 8.99,  "text": "Even when the answer is unchanged," },
+    { "start": 9.29,  "end": 13.42, "text": "each repeat adds delay and keeps the\ndatabase doing work again." },
+    { "start": 14.05, "end": 16.85, "text": "A cache keeps a copy near the API." },
+    { "start": 17.14, "end": 20.36, "text": "A miss fetches from the database\nand fills the cache;" },
+    { "start": 20.54, "end": 22.75, "text": "a hit returns that copy directly." },
+    { "start": 23.36, "end": 24.96, "text": "The answer stays the same;" },
+    { "start": 25.24, "end": 29.51, "text": "repeat reads take a shorter route without\nanother database round trip." },
+    { "start": 30.12, "end": 32.70, "text": "Synthetic p95 latency:" },
+    { "start": 32.92, "end": 35.08, "text": "420 ms before," },
+    { "start": 35.24, "end": 39.31, "text": "180 ms after — about 57% lower." },
+    { "start": 40.17, "end": 41.45, "text": "Set freshness rules." },
+    { "start": 41.61, "end": 45.52, "text": "Measure your own workload before\npromising any improvement." }
+  ]
+}

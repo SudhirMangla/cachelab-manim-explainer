@@ -1,0 +1,60 @@
+1
+00:00:00,250 --> 00:00:04,620
+Repeated API reads send the same request
+back to the database,
+
+2
+00:00:04,820 --> 00:00:06,270
+adding avoidable time.
+
+3
+00:00:07,060 --> 00:00:08,990
+Even when the answer is unchanged,
+
+4
+00:00:09,290 --> 00:00:13,420
+each repeat adds delay and keeps the
+database doing work again.
+
+5
+00:00:14,050 --> 00:00:16,850
+A cache keeps a copy near the API.
+
+6
+00:00:17,140 --> 00:00:20,360
+A miss fetches from the database
+and fills the cache;
+
+7
+00:00:20,540 --> 00:00:22,750
+a hit returns that copy directly.
+
+8
+00:00:23,360 --> 00:00:24,960
+The answer stays the same;
+
+9
+00:00:25,240 --> 00:00:29,510
+repeat reads take a shorter route without
+another database round trip.
+
+10
+00:00:30,120 --> 00:00:32,700
+Synthetic p95 latency:
+
+11
+00:00:32,920 --> 00:00:35,080
+420 ms before,
+
+12
+00:00:35,240 --> 00:00:39,310
+180 ms after — about 57% lower.
+
+13
+00:00:40,170 --> 00:00:41,450
+Set freshness rules.
+
+14
+00:00:41,610 --> 00:00:45,520
+Measure your own workload before
+promising any improvement.

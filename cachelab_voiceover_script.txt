@@ -1,0 +1,39 @@
+VIDEO DURATION: 00:46.07 (includes a 0.50-second end-card hold)
+TARGET DELIVERY: Clear, conversational, about 145–155 words per minute. Keep pauses between sections brief; adjust pace slightly if the export drifts from the cues.
+
+TIMED CUES — DO NOT PASTE THESE LABELS OR TIMECODES INTO SPEECHIFY.
+Cue times align with the visual sections in cachelab_explainer.mp4. The voice may need a small pace adjustment after export.
+
+00:00.00–00:06.28  OPEN — Repeated API reads
+Repeated API reads send the same request back to the database, adding avoidable time.
+
+00:06.28–00:13.43  PROBLEM — Repeated database work
+Even when the answer is unchanged, each repeat adds delay and keeps the database doing work again.
+
+00:13.43–00:23.35  HOW IT WORKS — Miss, fill, hit
+A cache keeps a copy near the API. A miss fetches from the database and fills the cache; a hit returns that copy directly.
+
+00:23.35–00:30.10  COMPARISON — Shorter route
+The answer stays the same; repeat reads take a shorter route without another database round trip.
+
+00:30.10–00:40.16  METRICS — Synthetic p95 example
+Synthetic p ninety-five latency: four hundred twenty milliseconds before, one hundred eighty after—about fifty-seven percent lower.
+
+00:40.16–00:46.07  CLOSE — Freshness and measurement
+Set freshness rules. Measure your own workload before promising any improvement.
+
+
+COPY-PASTE SCRIPT — COPY ONLY THE SIX PARAGRAPHS BELOW
+
+Repeated API reads send the same request back to the database, adding avoidable time.
+
+Even when the answer is unchanged, each repeat adds delay and keeps the database doing work again.
+
+A cache keeps a copy near the API. A miss fetches from the database and fills the cache; a hit returns that copy directly.
+
+The answer stays the same; repeat reads take a shorter route without another database round trip.
+
+Synthetic p ninety-five latency: four hundred twenty milliseconds before, one hundred eighty after—about fifty-seven percent lower.
+
+Set freshness rules. Measure your own workload before promising any improvement.
+
